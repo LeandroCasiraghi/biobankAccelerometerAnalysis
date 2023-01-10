@@ -395,7 +395,7 @@ def writeTimeSeries(e, labels, tsFile):
     :rtype: void
     """
 
-    cols = ['acc'] + labels
+    cols = ['acc'] + ['temperature'] + labels
     if 'MET' in e.columns:
         cols.append('MET')
     if 'imputed' in e.columns:
